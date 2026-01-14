@@ -14,7 +14,12 @@ import {
 } from "@/components/ui/item";
 import { ChevronRightIcon } from "lucide-react";
 
-const posts = [
+const posts: {
+  slug: string;
+  title: string;
+  pubDate: string;
+  author: keyof typeof authors;
+}[] = [
   {
     slug: "00-roblox-needs-to-switch-paths",
     title: "Roblox needs to switch paths.",

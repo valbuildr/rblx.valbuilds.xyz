@@ -28,7 +28,7 @@ const projects = [
 ];
 
 export default function Page() {
-  const [search, setSearch] = useState(null);
+  const [search, setSearch] = useState<undefined | string>(undefined);
 
   return (
     <div className="min-h-screen flex flex-col justify-between">
