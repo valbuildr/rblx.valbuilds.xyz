@@ -51,11 +51,9 @@ export default function Page() {
               <Item key={index} asChild>
                 <a href={project.slug}>
                   <ItemHeader>
-                    <Image
+                    <img
                       src={project.hero}
                       alt={project.name}
-                      width={512}
-                      height={512}
                       className="aspect-square w-full rounded-sm object-cover"
                     />
                   </ItemHeader>
